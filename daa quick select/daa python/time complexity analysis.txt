@@ -1,0 +1,22 @@
+1.Partition Function (partition):
+
+->The partition function iterates through the elements of the array once in a loop. Since the loop runs from low to high, it takes O(n) time, where n is the number of elements in the array.
+
+2.QuickSelect Algorithm (quickSelect):
+
+->In the average case, each call to the quickSelect function reduces the problem size by roughly half (similar to binary search).
+However, in the worst case, the partitioning process may not evenly divide the array, leading to unbalanced partitions and worst-case time complexity.
+The worst-case time complexity of the quickSelect algorithm can be  O(n^2) but this occurs very rarely and is mitigated by choosing a good pivot strategy.
+On average, the time complexity of the quickSelect algorithm is O(n).
+
+3.Overall Analysis:
+
+->The time complexity of your code is primarily determined by the quickSelect algorithm, as the partitioning step is O(n).
+Therefore, the overall time complexity of your code is O(n) on average.
+
+4.File Operations:
+
+->The time complexity of file operations (reading from the CSV file) is typically considered constant or negligible compared to the main operations of the quickSelect algorithm.
+
+**In conclusion, the time complexity analysis of your code indicates that it has an average-case time complexity of O(n) due to the quickSelect algorithm, with a worst-case time complexity of O(n^2) 
+ in rare scenarios.
